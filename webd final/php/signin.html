@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ott sign up</title>
+   <style>
+       body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background-image: url('https://thumbs.dreamstime.com/b/sign-text-illustration-social-icons-tablet-computer-mobile-cellphones-cyan-digital-world-map-background-43606819.jpg');
+           background-size: cover;
+           font-family: Arial, sans-serif;
+       }
+       form {
+           background-color: rgba(255, 255, 255, 0.8);
+           padding: 20px;
+           border-radius: 8px;
+           width: 300px;
+       }
+       label {
+           display: block;
+           margin-bottom: 10px;
+       }
+       input[type="text"], input[type="password"] {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 20px;
+           border-radius: 4px;
+           border: 1px solid #ccc;
+       }
+       input[type="submit"] {
+           width: 100%;
+           padding: 10px;
+           background-color: #4CAF50;
+           color: white;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+       input[type="submit"]:hover {
+           background-color: #45a049;
+       }
+   </style>
+</head>
+<body>
+   <form id="signup" action="signin.php" method="post">
+       <label for="username">Username:</label>
+       <input type="text" id="username" name="ottusername" required>
+   
+       <label for="password">Password:</label>
+       <input type="password" id="password" name="ottpassword" required>
+
+       <input type="submit" value="Login" >
+   </form>
+</body>
+</html>

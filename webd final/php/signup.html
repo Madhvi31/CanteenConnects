@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ott sign up</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #c876fb;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    
+    <form id="signup" action="signup.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="ottusername" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="ottpassword" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="ottage" id="age">
+
+        <label for="address">Address:</label>
+        <textarea name="ottaddress" id="address" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Sign up">
+      </form>
+
+    
+</body>
+
+/* <!-- <script src="script.js"></script> --> */
+
+</html>
